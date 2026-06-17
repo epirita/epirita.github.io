@@ -1,4 +1,4 @@
-feed bytes: 28287
+feed bytes: 28105
 items: 6
 DXDjirlkRiM: downloaded 57885 bytes
 DXA-v02FoLS: downloaded 58415 bytes
