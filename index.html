@@ -150,10 +150,20 @@
         .parts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
         .part-card { background: #fff; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 
-        .part-img-box { background: #eee; width: 100%; aspect-ratio: 1/1; margin-bottom: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .part-img-box { background: #eee; width: 100%; aspect-ratio: 1/1; margin-bottom: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
         .part-img-box img { width: 100%; height: 100%; object-fit: cover; }
+        .part-img-box video { width: 100%; height: 100%; object-fit: cover; }
+        .ba-tag { position: absolute; top: 8px; left: 8px; background: rgba(26,58,95,0.9); color: #fff; font-size: 0.68rem; font-weight: bold; padding: 3px 9px; border-radius: 20px; letter-spacing: 0.04em; }
 
         .part-name { font-weight: bold; font-size: 1.1rem; color: #1a3a5f; margin-bottom: 5px; }
+
+        /* ニッチ部位 */
+        .niche-title { font-size: 1.4rem; color: #1a3a5f; text-align: center; margin: 55px 0 6px; }
+        .niche-lead { text-align: center; color: #555; font-size: 0.95rem; margin: 0 auto 22px; max-width: 640px; }
+        .niche-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 600px; margin: 0 auto; }
+        .price-line { font-size: 0.95rem; color: #1a3a5f; margin: 2px 0; }
+        .price-line b { font-size: 1.15rem; }
+        .price-line.combo { color: #e74c3c; font-weight: bold; }
 
         .recommend-plan { border: 4px solid #d4af37; border-radius: 20px; padding: 40px; max-width: 600px; margin: 40px auto 0; text-align: center; background: #fffdf5; position: relative; }
         .recommend-plan::before { content: '圧倒的安さ！地域最安級プラン'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: #e74c3c; color: white; padding: 5px 20px; border-radius: 30px; font-weight: bold; font-size: 0.9rem; white-space: nowrap; }
@@ -218,6 +228,7 @@
         /* スマホ（〜600px）：料金の部位画像は1列にする */
         @media (max-width: 600px) {
             .parts-grid { grid-template-columns: 1fr; }
+            .niche-grid { grid-template-columns: 1fr; max-width: 360px; }
         }
 
         /* スマホ（375px以下）追加調整 */
@@ -290,13 +301,8 @@
             -->
             <div class="insta-grid">
                 <!-- INSTA:START -->
-<div class="insta-card"><a href="https://www.instagram.com/p/DXDjirlkRiM" target="_blank" rel="noopener"><img src="assets/insta/DXDjirlkRiM.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">「夏になってから」では遅いかも？😱 脱毛は完了まで時間がかかるから、肌を出す前の「今」が最終受付のタイミング！理想のツルツル肌で夏本番を迎え…</div><div class="insta-more"><a href="https://www.instagram.com/p/DXDjirlkRiM" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<div class="insta-card"><a href="https://www.instagram.com/p/DXA-v02FoLS" target="_blank" rel="noopener"><img src="assets/insta/DXA-v02FoLS.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">GWの旅行や帰省、ムダ毛を気にせず楽しむなら今が計画時！✈️ 脱毛は1回では終わらないからこそ、逆算してスタート。エピリタは派手な広告を出さ…</div><div class="insta-more"><a href="https://www.instagram.com/p/DXA-v02FoLS" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<div class="insta-card"><a href="https://www.instagram.com/p/DW-Z8_VlQ1R" target="_blank" rel="noopener"><img src="assets/insta/DW-Z8_VlQ1R.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">お花見や春のデート、至近距離でも自信を持てますか？🌸 エピリタなら、気になるパーツをピンポイントでケア。強引なセット販売ではなく、必要な分だ…</div><div class="insta-more"><a href="https://www.instagram.com/p/DW-Z8_VlQ1R" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<div class="insta-card"><a href="https://www.instagram.com/p/DW71KN0FLcE" target="_blank" rel="noopener"><img src="assets/insta/DW71KN0FLcE.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">入社や異動で「初めまして」が増える季節。エピリタで身だしなみを整えて、信頼されるビジネスマンへ。私たちは「契約しない」という意思も尊重します…</div><div class="insta-more"><a href="https://www.instagram.com/p/DW71KN0FLcE" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<div class="insta-card"><a href="https://www.instagram.com/p/DW5QXQrlQrX" target="_blank" rel="noopener"><img src="assets/insta/DW5QXQrlQrX.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">梅雨の不快な湿気、VIOの「蒸れ」や「ニオイ」対策はエピリタで☔️ 衛生面でのメリットが大きく、一度体験すると戻れない快適さです。デリケート…</div><div class="insta-more"><a href="https://www.instagram.com/p/DW5QXQrlQrX" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<div class="insta-card"><a href="https://www.instagram.com/p/DW2rkaZkRy3" target="_blank" rel="noopener"><img src="assets/insta/DW2rkaZkRy3.jpg" alt="エピリタのInstagram投稿" loading="lazy"></a><div class="insta-cap">母の日に「綺麗になったね」と褒められる清潔感を。🎁 毎日顔を合わせる家族だからこそ、変化に気づいてくれるはず。エピリタはお客様の予算と理想の…</div><div class="insta-more"><a href="https://www.instagram.com/p/DW2rkaZkRy3" target="_blank" rel="noopener">Instagramで見る →</a></div></div>
-<!-- INSTA:END -->
+                <p style="margin:0; color:#aaa; grid-column:1/-1;">最新の投稿はまもなく自動で表示されます。</p>
+                <!-- INSTA:END -->
             </div>
 
             <div class="sns-link-wrap">
@@ -350,20 +356,37 @@
         <div class="recommend-plan">
             <h3 style="font-size: 1.6rem; margin-bottom: 5px;">ヒゲ全体セット</h3>
             <p>（鼻下・アゴ下・頬）</p>
+            <div style="position: relative; max-width: 280px; margin: 18px auto;">
+                <span class="ba-tag">Before → After</span>
+                <video src="assets/before_after.mp4" autoplay muted loop playsinline preload="metadata"
+                       style="width: 100%; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); display: block;"></video>
+            </div>
+            <p style="color: #555; font-size: 0.92rem; margin-top: 0;">ヒゲのない、清潔感のある印象へ。</p>
             <div class="amount">￥5,000 <span style="font-size: 1rem;">(税込)</span></div>
             <p style="color: #e74c3c; font-weight: bold;">セットなら1,000円お得！</p>
             <a href="sms:07089311108" class="btn btn-gold" style="margin-top: 20px;">ショートメールで予約する</a>
         </div>
-    </div>
-</section>
 
-<!-- ビフォーアフター動画 -->
-<section style="padding: 70px 0; background: #f9f9f9;">
-    <div class="container">
-        <h2>施術でこんなに変わる</h2>
-        <video src="assets/before_after.mp4" autoplay muted loop playsinline preload="metadata"
-               style="width: 100%; max-width: 300px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); display: block; margin: 0 auto;"></video>
-        <p style="color: #555; font-size: 0.95rem; margin-top: 18px;">ヒゲのない、清潔感のある印象へ。</p>
+        <h3 class="niche-title">ニッチ部位</h3>
+        <p class="niche-lead">気になるけど人には言いにくい、襟足や耳毛もおまかせください。</p>
+        <div class="niche-grid">
+            <div class="part-card">
+                <div class="part-img-box">
+                    <span class="ba-tag">Before → After</span>
+                    <video src="assets/eriashi_anime.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                </div>
+                <div class="part-name">襟足（えりあし）</div>
+                <p class="price-line"><b>￥2,000</b></p>
+            </div>
+            <div class="part-card">
+                <div class="part-img-box">
+                    <img src="assets/mimige.png" alt="耳毛の脱毛イラスト">
+                </div>
+                <div class="part-name">耳毛（みみげ）</div>
+                <p class="price-line">単独 <b>￥2,000</b></p>
+                <p class="price-line combo">他部位と併用 <b>￥1,000</b></p>
+            </div>
+        </div>
     </div>
 </section>
 
