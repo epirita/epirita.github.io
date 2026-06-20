@@ -1,9 +1,9 @@
-feed bytes: 28311
+feed bytes: 27671
 items: 6
 DXDjirlkRiM: downloaded 57885 bytes
-DXA-v02FoLS: downloaded 58415 bytes
-DW-Z8_VlQ1R: downloaded 50065 bytes
-DW71KN0FLcE: downloaded 33023 bytes
-DW5QXQrlQrX: downloaded 54652 bytes
-DW2rkaZkRy3: downloaded 27104 bytes
+DXA-v02FoLS: downloaded 54873 bytes
+DW-Z8_VlQ1R: downloaded 46973 bytes
+DW71KN0FLcE: downloaded 31129 bytes
+DW5QXQrlQrX: downloaded 51006 bytes
+DW2rkaZkRy3: downloaded 25903 bytes
 cards: 6
